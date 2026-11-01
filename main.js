@@ -18,7 +18,7 @@
   });
 
   // Scroll-spy: underline the nav link for the section in view.
-  var links = Array.prototype.slice.call(document.querySelectorAll(".nav-links a"));
+  var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
   var sections = links
     .map(function (a) { return document.querySelector(a.getAttribute("href")); })
     .filter(Boolean);

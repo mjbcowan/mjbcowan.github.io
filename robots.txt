@@ -1,0 +1,73 @@
+# robots.txt for mjbcowan.com
+#
+# This site contains personal information. It may be indexed by conventional
+# search engines so people can find it, but it may NOT be collected, scraped,
+# mined or used to train, fine-tune, ground or prompt AI / machine-learning
+# systems, or to build datasets or profiles. See https://mjbcowan.com/terms.html
+#
+# Rights in this content are expressly reserved against text and data mining,
+# including under Article 4(3) of EU Directive 2019/790.
+
+# ── AI training, AI search and dataset crawlers: no access ──
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: Google-Extended
+User-agent: Google-CloudVertexBot
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: Gemini-Deep-Research
+User-agent: Applebot-Extended
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Meta-ExternalAgent
+User-agent: Meta-ExternalFetcher
+User-agent: FacebookBot
+User-agent: Amazonbot
+User-agent: bedrockbot
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: TikTokSpider
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: MistralAI-User
+User-agent: DuckAssistBot
+User-agent: YouBot
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: Diffbot
+User-agent: ImagesiftBot
+User-agent: img2dataset
+User-agent: Omgilibot
+User-agent: omgili
+User-agent: webzio-extended
+User-agent: Timpibot
+User-agent: PanguBot
+User-agent: PetalBot
+User-agent: Kangaroo Bot
+User-agent: iaskspider/2.0
+User-agent: VelenPublicWebCrawler
+User-agent: FriendlyCrawler
+User-agent: ICC-Crawler
+User-agent: Cotoyogi
+User-agent: Brightbot 1.0
+User-agent: Factset_spyderbot
+User-agent: LinerBot
+User-agent: QualifiedBot
+User-agent: Novellum
+User-agent: Panscient
+User-agent: panscient.com
+User-agent: SemrushBot-OCOB
+User-agent: Scrapy
+Disallow: /
+
+# ── Everyone else (e.g. ordinary search engines) ──
+# Content signals: indexing for search is allowed; AI training and AI input are not.
+User-agent: *
+Content-Signal: search=yes, ai-train=no, ai-input=no
+Allow: /

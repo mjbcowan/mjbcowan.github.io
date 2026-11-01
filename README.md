@@ -15,13 +15,19 @@ python3 -m http.server 8000
 
 ## Common edits
 
-- **Update the CV PDF:** replace `assets/cv.pdf`. Every "Download CV" link points to it.
+- **CV PDF:** download links are switched off for now, and `assets/cv.pdf` is git-ignored so it is never published. To bring them back, supply a PDF without the phone number, remove it from `.gitignore`, and add `<a href="assets/cv.pdf" class="btn-line" target="_blank" rel="noopener">Download CV →</a>` where wanted (intro and Contact).
 - **Add the real images:** save them as `assets/portrait.jpg` and `assets/fig-01.jpg` … `fig-04.jpg`, then change the matching `src="assets/….svg"` in `index.html` to `.jpg`. Images are shown in greyscale automatically.
   - `fig-01`: full-width banner, about 21:9.
   - `portrait`: about 4:3.
   - `fig-02` … `fig-04`: publication tiles, about 4:5.
-- **Paper links:** search `index.html` for `TODO`. Replace each `<a class="todo" aria-disabled="true">paper</a>` with `<a href="https://…">paper</a>`, and do the same for `doi`.
+- **Add a publication:** copy an existing `<article class="pub">` block in `index.html` and update its image, text, and `paper` / `doi` links.
 - **Add a ledger row** (Experience, Education or Leadership): copy an existing `<div class="ledger-row">` block.
+
+## AI and scraping opt-out
+
+- `terms.html` is the Terms of use page, linked from the footer. It prohibits scraping and AI/ML use of the content and personal information.
+- `robots.txt` blocks known AI-training, AI-search and dataset crawlers, and allows ordinary search engines. New AI crawlers appear regularly, so check the list now and then.
+- `.well-known/tdmrep.json`, `ai.txt` and the `noai` / `tdm-reservation` meta tags in each page's `<head>` give the same opt-out in other machine-readable formats. Add the two meta tags to any new page.
 
 ## Domain (mjbcowan.com)
 

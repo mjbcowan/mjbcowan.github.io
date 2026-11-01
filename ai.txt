@@ -1,0 +1,7 @@
+# ai.txt for mjbcowan.com
+# No content on this site (text, images, documents or code) may be used to
+# train, fine-tune or prompt AI / machine-learning systems.
+# See https://mjbcowan.com/terms.html
+
+User-Agent: *
+Disallow: /

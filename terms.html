@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms of use · Max Cowan</title>
+  <meta name="description" content="Terms of use for mjbcowan.com, including the prohibition on scraping and AI or machine-learning use of its content and personal information." />
+  <meta name="author" content="Max Cowan" />
+  <meta name="robots" content="noai, noimageai" />
+  <meta name="tdm-reservation" content="1" />
+  <link rel="canonical" href="https://mjbcowan.com/terms.html" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500&family=Newsreader:ital@1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add("js");
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        root.setAttribute("data-theme", "dark");
+      }
+    })();
+  </script>
+</head>
+
+<body id="top">
+  <nav class="top-nav" aria-label="Primary">
+    <div class="nav-inner edge">
+      <a href="./" class="brand tight">MAX COWAN</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="./" class="nav-link">← Back to site</a>
+        </div>
+        <div class="nav-actions">
+          <button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+            <svg id="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg id="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="legal prose edge">
+    <h1 class="display tight">Terms of use.</h1>
+    <p class="muted">Effective 1 November 2026</p>
+
+    <h2>1. About these terms</h2>
+    <p>These terms apply to mjbcowan.com and everything published on it, including text, images, figures and the site's code (together, the "content"). By accessing the site, by any means, you agree to these terms. If you do not agree, do not use the site.</p>
+
+    <h2>2. Ownership</h2>
+    <p>Unless stated otherwise, all content is © Max Cowan, all rights reserved. Images or figures from publications remain the property of their respective rights holders. Making the content publicly viewable does not grant any licence beyond what these terms expressly allow.</p>
+
+    <h2>3. What you may do</h2>
+    <ul>
+      <li>View the site in a web browser for your own personal or professional reference, for example when considering a collaboration, role or enquiry.</li>
+      <li>Link to the site, or share its address.</li>
+      <li>Quote brief excerpts with attribution and a link back, for ordinary non-automated purposes such as an introduction or a citation.</li>
+      <li>Index the site in a conventional web search engine for the sole purpose of helping people find it.</li>
+    </ul>
+
+    <h2>4. What you may not do</h2>
+    <p>Without my prior written permission, you may not, and may not allow or help anyone else to:</p>
+    <ul>
+      <li>scrape, crawl, harvest, copy or otherwise collect the content or any personal information on the site by automated means, including bots, spiders, scripts, headless browsers or browser extensions, except as allowed in section 3;</li>
+      <li>use the content to train, fine-tune, evaluate, benchmark or otherwise develop any artificial intelligence or machine-learning model or system, including large language models and image or face models;</li>
+      <li>feed the content into an AI system as input, context or grounding, for example through retrieval-augmented generation (RAG), embeddings, vector databases, AI search answers, AI agents or summarisation services;</li>
+      <li>include the content in any dataset, corpus, archive or collection made for AI, machine-learning, analytics or resale purposes;</li>
+      <li>perform text and data mining on the content;</li>
+      <li>build, enrich or sell profiles, contact lists or lead lists about me, or otherwise compile my personal information, including for recruitment databases, marketing or data brokerage;</li>
+      <li>run facial recognition, biometric analysis or reverse-image matching on any photograph of me;</li>
+      <li>republish, mirror or frame the site or substantial parts of it; or</li>
+      <li>get around robots.txt, rate limits or any other technical measure that restricts access.</li>
+    </ul>
+    <p>These restrictions apply whether the use is commercial or non-commercial, and whether it is done by a person or by software acting for a person or organisation.</p>
+
+    <h2>5. Reservation of rights against text and data mining</h2>
+    <p>I expressly reserve all rights in the content against text and data mining, including for the purposes of Article 4(3) of Directive (EU) 2019/790 and any equivalent law elsewhere, to the fullest extent the law allows. This reservation is also given in machine-readable form, through:</p>
+    <ul>
+      <li><a href="robots.txt">robots.txt</a>, which blocks known AI crawlers and declares <code>ai-train=no, ai-input=no</code>;</li>
+      <li>the TDM Reservation Protocol (<a href=".well-known/tdmrep.json">/.well-known/tdmrep.json</a> and a <code>tdm-reservation</code> meta tag);</li>
+      <li><code>noai</code> and <code>noimageai</code> robots meta tags; and</li>
+      <li><a href="ai.txt">ai.txt</a>.</li>
+    </ul>
+    <p>The absence of any one of these signals on a particular page or file does not imply permission.</p>
+
+    <h2>6. Personal information</h2>
+    <p>The site contains personal data about me, such as my name, image, education, employment history and contact details. I publish it so that people can learn about my work and get in touch. I do not consent to it being collected, stored, combined or processed for any other purpose, including the purposes listed in section 4. Anyone who processes this data is responsible for complying with applicable data protection law, including the UK GDPR, the Data Protection Act 2018 and the EU GDPR. Publication on a public website is not, by itself, a lawful basis for further processing.</p>
+    <p>If you hold personal data about me that you obtained from this site in breach of these terms, I ask that you delete it, and I may exercise my rights under data protection law, including the rights of access, erasure and objection.</p>
+
+    <h2>7. Your privacy</h2>
+    <p>This site does not use cookies, analytics or tracking. Your light or dark theme choice is stored only in your own browser. Fonts are loaded from Google Fonts, so your browser will contact Google's servers. The site is hosted on GitHub Pages, which may keep standard server logs.</p>
+
+    <h2>8. No warranty</h2>
+    <p>The content is provided for general information only, as is, without any warranty of accuracy or completeness. To the extent the law allows, I am not liable for any loss arising from your use of the site or reliance on its content.</p>
+
+    <h2>9. Enforcement</h2>
+    <p>I may block any user, IP address or automated agent that breaches these terms, and I reserve all other rights and remedies, including for infringement of copyright and database rights and for breach of data protection law.</p>
+
+    <h2>10. Changes</h2>
+    <p>I may update these terms at any time by publishing a new version on this page. The effective date at the top shows when they last changed.</p>
+
+    <h2>11. Governing law</h2>
+    <p>These terms are governed by the law of England and Wales, and the courts of England and Wales have exclusive jurisdiction over any dispute arising from them.</p>
+
+    <h2>12. Contact</h2>
+    <p>To ask for permission, or with any question about these terms, email <a href="#" class="email" data-user="me" data-domain="mjbcowan.com">me [at] mjbcowan [dot] com</a>.</p>
+  </main>
+
+  <footer class="site-footer edge">
+    <div class="footer-base">
+      <span>© 2026 Max Cowan</span>
+      <a href="./">mjbcowan.com</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
